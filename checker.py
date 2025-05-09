@@ -2,8 +2,10 @@ import pandas as pd
 pd.set_option('display.show_dimensions', False)
 
 # Read both CSV files
-df1 = pd.read_csv('dcp_electrostatics_lv1.csv')
-df2 = pd.read_csv('dcp_electrostatics_lv1_answers.csv')
+file1 = "answers/NA_solutions_part1.csv"
+df1 = pd.read_csv(file1)
+file2 = "answers/NA_solutions_ak.csv"
+df2 = pd.read_csv(file2)
 
 # Rename columns for clarity
 df1.columns = ['Question', 'Your_Answer']

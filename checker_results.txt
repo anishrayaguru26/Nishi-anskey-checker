@@ -1,0 +1,22 @@
+
+Doubts:
+ Question Your_Answer
+       23       doubt
+
+Total questions with doubts: 1
+
+Questions with mismatched answers:
+ Question Your_Answer Correct_Answer
+        2           d              b
+       13           b              c
+       48           a              c
+       82           a              b
+       85           a              b
+
+Total questions with mismatched answers: 5
+
+All questions to review: [2, 13, 23, 48, 82, 85]
+Total questions to review: 6
+
+Questions with doubts: [23] 1
+Questions with wrong answers: [2, 13, 48, 82, 85] 5
