@@ -46,7 +46,11 @@ add_output("\nQuestions with doubts: " + str(doubt_questions) + " " + str(len(do
 add_output("Questions with wrong answers: " + str(mismatched_questions) + " " + str(len(mismatched_questions)))
 
 # Save output to file
-with open('checker_results.txt', 'w', encoding='utf-8') as f:
+generated_file_name = "checker_results.txt"
+with open(generated_file_name, 'w', encoding='utf-8') as f:
     f.write('\n'.join(output_lines))
+
+
+
 
 
