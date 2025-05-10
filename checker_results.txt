@@ -1,24 +1,33 @@
-NA_solutions_part1.csv
-NA_solutions_ak.csv
+answers/GOC_Abhyas_nishi.csv
+answers/GOC_Abhyas_ak.csv
 
 Doubts:
  Question Your_Answer
-       23       doubt
+        3       doubt
+        9       doubt
+       11       doubt
+       20       doubt
+       33       doubt
+       37       doubt
+       38       doubt
+       44       doubt
+       55       doubt
 
-Total questions with doubts: 1
+Total questions with doubts: 9
 
 Questions with mismatched answers:
  Question Your_Answer Correct_Answer
-        2           d              b
-       13           b              c
-       48           a              c
-       82           a              b
-       85           a              b
+       21           c              b
+       25           b              a
+       28           a              b
+       42           5              6
+       47           b              a
+       48           d              b
 
-Total questions with mismatched answers: 5
+Total questions with mismatched answers: 6
 
-All questions to review: [2, 13, 23, 48, 82, 85]
-Total questions to review: 6
+All questions to review: [3, 9, 11, 20, 21, 25, 28, 33, 37, 38, 42, 44, 47, 48, 55]
+Total questions to review: 15
 
-Questions with doubts: [23] 1
-Questions with wrong answers: [2, 13, 48, 82, 85] 5
+Questions with doubts: [3, 9, 11, 20, 33, 37, 38, 44, 55] 9
+Questions with wrong answers: [21, 25, 28, 42, 47, 48] 6

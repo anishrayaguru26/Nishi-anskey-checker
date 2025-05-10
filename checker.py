@@ -2,9 +2,9 @@ import pandas as pd
 pd.set_option('display.show_dimensions', False)
 
 # Read both CSV files
-file1 = "answers/NA_solutions_part1.csv"
+file1 = "answers/GOC_Abhyas_nishi.csv"
 df1 = pd.read_csv(file1)
-file2 = "answers/NA_solutions_ak.csv"
+file2 = "answers/GOC_Abhyas_ak.csv"
 df2 = pd.read_csv(file2)
 
 # Rename columns for clarity
@@ -23,8 +23,8 @@ def add_output(text):
     output_lines.append(str(text))
 
 # Find questions with doubts
-add_output("NA_solutions_part1.csv")
-add_output("NA_solutions_ak.csv")
+add_output(file1)
+add_output(file2)
 
 doubts = merged_df[merged_df['Your_Answer'] == 'doubt']
 add_output("\nDoubts:")
@@ -32,9 +32,13 @@ add_output(doubts[['Question', 'Your_Answer']].to_string(index=False))
 add_output(f"\nTotal questions with doubts: {len(doubts)}")
 
 # Find mismatched answers (excluding doubts)
+# Now checking for both letter answers and numeric answers
 mismatched = merged_df[
     (merged_df['Your_Answer'] != merged_df['Correct_Answer']) & 
-    (merged_df['Your_Answer'].isin(['a', 'b', 'c', 'd']))
+    (
+        merged_df['Your_Answer'].isin(['a', 'b', 'c', 'd']) |  # Letter answers
+        merged_df['Your_Answer'].str.isdigit()  # Numeric answers
+    )
 ]
 add_output("\nQuestions with mismatched answers:")
 add_output(mismatched[['Question', 'Your_Answer', 'Correct_Answer']].to_string(index=False))
