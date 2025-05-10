@@ -23,6 +23,9 @@ def add_output(text):
     output_lines.append(str(text))
 
 # Find questions with doubts
+add_output("NA_solutions_part1.csv")
+add_output("NA_solutions_ak.csv")
+
 doubts = merged_df[merged_df['Your_Answer'] == 'doubt']
 add_output("\nDoubts:")
 add_output(doubts[['Question', 'Your_Answer']].to_string(index=False))

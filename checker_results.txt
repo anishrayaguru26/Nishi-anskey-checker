@@ -1,3 +1,5 @@
+NA_solutions_part1.csv
+NA_solutions_ak.csv
 
 Doubts:
  Question Your_Answer
