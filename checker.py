@@ -2,8 +2,10 @@ import pandas as pd
 pd.set_option('display.show_dimensions', False)
 
 # Read both CSV files
-df1 = pd.read_csv('dcp_electrostatics_lv1.csv')
-df2 = pd.read_csv('dcp_electrostatics_lv1_answers.csv')
+file1 = "answers/NA_solutions_part1.csv"
+df1 = pd.read_csv(file1)
+file2 = "answers/NA_solutions_ak.csv"
+df2 = pd.read_csv(file2)
 
 # Rename columns for clarity
 df1.columns = ['Question', 'Your_Answer']
@@ -21,6 +23,9 @@ def add_output(text):
     output_lines.append(str(text))
 
 # Find questions with doubts
+add_output("NA_solutions_part1.csv")
+add_output("NA_solutions_ak.csv")
+
 doubts = merged_df[merged_df['Your_Answer'] == 'doubt']
 add_output("\nDoubts:")
 add_output(doubts[['Question', 'Your_Answer']].to_string(index=False))
@@ -46,7 +51,11 @@ add_output("\nQuestions with doubts: " + str(doubt_questions) + " " + str(len(do
 add_output("Questions with wrong answers: " + str(mismatched_questions) + " " + str(len(mismatched_questions)))
 
 # Save output to file
-with open('checker_results.txt', 'w', encoding='utf-8') as f:
+generated_file_name = "checker_results.txt"
+with open(generated_file_name, 'w', encoding='utf-8') as f:
     f.write('\n'.join(output_lines))
+
+
+
 
 

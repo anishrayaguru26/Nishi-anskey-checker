@@ -1,0 +1,41 @@
+
+Doubts:
+ Question Your_Answer
+        1       doubt
+        2       doubt
+        3       doubt
+       24       doubt
+       31       doubt
+       32       doubt
+       39       doubt
+       50       doubt
+       56       doubt
+       58       doubt
+       62       doubt
+       65       doubt
+       69       doubt
+
+Total questions with doubts: 13
+
+Questions with mismatched answers:
+ Question Your_Answer Correct_Answer
+       14           a              c
+       28           a              c
+       34           c              b
+       36           a              d
+       38           d              c
+       40           b              c
+       43           a              c
+       44           b              c
+       57           d              c
+       63           b              c
+       64           d              c
+       68           d              c
+
+Total questions with mismatched answers: 12
+
+All questions to review: [1, 2, 3, 14, 24, 28, 31, 32, 34, 36, 38, 39, 40, 43, 44, 50, 56, 57, 58, 62, 63, 64, 65, 68, 69]
+Total questions to review: 25
+
+Questions with doubts: [1, 2, 3, 24, 31, 32, 39, 50, 56, 58, 62, 65, 69] 13
+Questions with wrong answers: [14, 28, 34, 36, 38, 40, 43, 44, 57, 63, 64, 68] 12
